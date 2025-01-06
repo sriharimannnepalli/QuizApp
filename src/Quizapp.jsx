@@ -31,7 +31,7 @@ const Quizapp  = () => {
         setOption(opt);
     }
   return (
-    <div className = 'quiz'>
+    <div className = 'quiz-container'>
          <h1>{data[index].id}. {data[index].Question}</h1>
         <ul>
             <li className={option === "Option1" ? "selected" : ""} onClick={() => handleSelect("Option1")}>{data[index].Option1}</li>
